@@ -1,0 +1,73 @@
+
+// /*mixins*/
+@mixin anim($property){
+	transition: $property ease-in-out all;
+	-webkit-transition: $property ease-in-out all;
+	-moz-transition: $property ease-in-out all;
+	-ms-transition: $property ease-in-out all;
+	-o-transition: $property ease-in-out all;
+}
+@mixin rotate($property){
+	transform: rotate($property);
+	-webkit-transform: rotate($property);
+	-moz-transform: rotate($property);
+	-ms-transform: rotate($property);
+	-o-transform: rotate($property);
+}
+@mixin rotateY($property){
+	transform: rotateY($property);
+	-webkit-transform: rotateY($property);
+	-moz-transform: rotateY($property);
+	-ms-transform: rotateY($property);
+	-o-transform: rotateY($property);
+}
+@mixin trans($propertyX, $propertyY){
+	transform: translate($propertyX, $propertyY);
+	-webkit-transform: translate($propertyX, $propertyY);
+	-moz-transform: translate($propertyX, $propertyY);
+	-ms-transform: translate($propertyX, $propertyY);
+	-o-transform: translate($propertyX, $propertyY);
+}
+@mixin scale($propertyX, $propertyY){
+	transform: scale($propertyX, $propertyY);
+	-webkit-transform: scale($propertyX, $propertyY);
+	-moz-transform: scale($propertyX, $propertyY);
+	-ms-transform: scale($propertyX, $propertyY);
+	-o-transform: scale($propertyX, $propertyY);
+}
+
+@mixin min-width-1200{
+	@media (min-width: 1200px){ 
+		@content; 
+	}
+}
+@mixin min-width-1440{
+	@media (min-width: 1440px){ 
+		@content; 
+	}
+}
+@mixin max-width-1440{
+	@media (max-width: 1440px){ 
+		@content; 
+	}
+}
+@mixin max-width-1199{
+	@media (max-width: 1199px){ 
+		@content; 
+	}
+}
+@mixin max-width-991{
+	@media (max-width: 991px){ 
+		@content; 
+	}
+}
+@mixin max-width-767{
+	@media (max-width: 767px){ 
+		@content; 
+	}
+}
+@mixin max-width-480{
+	@media (max-width: 480px){ 
+		@content; 
+	}
+}

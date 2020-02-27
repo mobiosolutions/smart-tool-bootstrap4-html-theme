@@ -1,0 +1,123 @@
+.ourBlogs{
+	background: $primary;
+	.title_with_detail{
+		.comTitle{
+			color: $white;
+		}
+		.title_detail{
+			color: #8E8E8E;
+		}
+	}
+	.pip_gallery_new{
+		overflow-x: hidden;
+		padding: 0;
+		.slider_con{
+			margin-bottom: 10px;
+		}
+		.thum_list_con{
+			height:380px;
+			left: 50%;
+			position: relative;
+			@include trans(-50%, 0);
+			@include max-width-1440{
+				height: 300px;
+			}
+			@include max-width-991{
+				height: 220px;
+			}
+		}
+		.thum_list{
+			display: flex;
+			height: 100%;
+			padding: 0 15px;
+			padding-bottom: 60px;
+			.type_photo{
+				position: relative;
+				border-radius: 4px;
+				overflow: hidden;
+				float: none;
+				width: 550px;
+				@include max-width-1440{
+					width: 430px;
+					height: 300px;
+				}
+				@include max-width-1199{
+					width: 380px;
+				}
+				@include max-width-991{
+					width: 320px;
+					height: 250px;
+				}
+				@include max-width-991{
+					width: 300px;
+					height: 220px;
+				}
+				&:before{
+					position: absolute;
+					content: '';
+					left: 0;
+					right: 0;
+					bottom: 0;
+					width: 100%;
+					height: 80px;
+					background: rgba(0, 0, 0, 0.7);
+					@include max-width-1440{
+						height: 70px;
+					}
+					@include max-width-991{
+						height: 50px;
+					}
+				}
+				.absoText{
+					position: absolute;
+					top: calc(100% - 75px);
+					width: calc(100% - 170px);
+					left: 15px;
+					color: $white;
+					font-weight: 700;
+					font-size: 24px;
+					line-height: 35px;
+					@include max-width-1440{
+						font-size: 18px;
+						line-height: 28px;
+						width: calc(100% - 120px);
+						top: calc(100% - 65px);
+					}
+					@include max-width-991{
+						font-size: 14px;
+						line-height: 20px;
+						top: calc(100% - 45px);
+					}
+				}
+				.date{
+					position: absolute;
+					right: 45px;
+					bottom: 30px;
+					width: 80px;
+					height: 80px;
+					border-radius: 50%;
+					background: $blue;
+					color: $white;
+					font-weight: 700;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					flex-direction: column;
+					font-size: 14px;
+					line-height: 20px;
+					@include max-width-1440{
+						right: 15px;
+						bottom: 20px;
+					}
+					@include max-width-991{
+						font-size: 12px;
+						line-height: 18px;
+						width: 70px;
+						height: 70px;
+						bottom: 10px;
+					}
+				}
+			}
+		}
+	}
+}

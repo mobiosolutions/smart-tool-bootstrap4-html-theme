@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+  <g id="Facebook" transform="translate(0)" clip-path="url(#clip-path)">
+    <path id="Facebook-2" data-name="Facebook" d="M5.129,15.429H1.709V8.143H0V5.336H1.709V3.651C1.709,1.363,2.674,0,5.416,0H7.7V2.808H6.272c-1.068,0-1.139.392-1.139,1.124l0,1.4H7.714l-.3,2.808H5.129v7.286Z" transform="translate(14.143 10.286)" fill="#fff"/>
+    <g id="Repeat_Grid_1" data-name="Repeat Grid 1" transform="translate(14.143 10.286)" clip-path="url(#clip-path-2)">
+      <g transform="translate(-14.143 -10.286)">
+        <path id="Facebook-3" data-name="Facebook" d="M5.129,15.429H1.709V8.143H0V5.336H1.709V3.651C1.709,1.363,2.674,0,5.416,0H7.7V2.808H6.272c-1.068,0-1.139.392-1.139,1.124l0,1.4H7.714l-.3,2.808H5.129v7.286Z" transform="translate(14.143 10.286)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,94 @@
+.featuresSec{
+	.comTitle{
+		text-align: left;
+	}
+	.feature_description{
+		margin-top: 30px;
+		font-size: 18px;
+		line-height: 30px;
+		@include max-width-1199{
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+	.featureList{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		flex-direction: row;
+		@include max-width-1199{
+			margin-top: 10px;
+			flex-direction: column;
+		}
+		@include max-width-991{
+			flex-direction: row;
+		}
+		li{
+			list-style-type: none;
+			width: 49%;
+			display: flex;
+			align-items: center;
+			color: $primary;
+			margin-top: 40px;
+			font-weight: 700;
+			@include max-width-1199{
+				width: 100%;
+				margin-top: 10px;
+			}
+			@include max-width-991{
+				margin-top: 20px;
+				width: 49%;
+			}
+			@include max-width-767{
+				width: 100%;
+				margin-top: 10px;
+			}
+			.feature_image{
+				width: 40px;
+				min-width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background: rgba(50, 50, 204, 0.05);
+				margin-right: 20px;
+			}
+		}
+	}
+	.btnGroup{
+		display: flex;
+		align-items: center;
+		margin-top: 35px;
+		@include max-width-480{
+			justify-content: space-between;
+		}
+		.btn{
+			margin-right: 20px;
+			@include max-width-480{
+				width: 49%;
+			}
+		}
+	}
+	.removeFromIpad{
+		@include max-width-991{
+			display: none;
+		}
+	}
+	.main_feature_image{
+		position: relative;
+		&:after{
+			position: absolute;
+			content: '';
+			width: 150px;
+			height: 150px;
+			right: -40px;
+			top: -36px;
+			z-index: -1;
+			background: url('../images/cross_pattern.svg') no-repeat;
+		}
+		img{
+			width: 100%;
+		}
+	}
+}

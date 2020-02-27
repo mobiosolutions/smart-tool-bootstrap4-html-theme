@@ -1,0 +1,24 @@
+/*font-family: 'Noto Sans', sans-serif;*/
+
+// variables:
+$primary: #1E1E21;
+$secondary: #FF6539;
+$white: #ffffff;
+$grey: #8E8E8E;
+$blue: #3232CC;
+
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+/*mixins*/
+@import 'mixins.scss';
+
+/*partials*/
+@import 'common.scss';
+@import 'header.scss';
+@import 'home.scss';
+@import 'feature.scss';
+@import 'blog.scss';
+@import 'clients.scss';
+@import 'map.scss';
+@import 'contact_us.scss';
+@import 'footer.scss';

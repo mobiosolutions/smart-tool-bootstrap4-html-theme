@@ -1,0 +1,95 @@
+
+
+
+.contactUsSection{
+	background: $primary;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	&:before{
+		position: absolute;
+		content: '';
+		left: 0;
+		top: 0;
+		background: url('../images/contact-bg.png') no-repeat;
+		background-size: cover;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+	.title_with_detail{
+		margin-bottom: 40px;
+		.comTitle{
+			color: $white;
+		}
+	}
+	.contactbox{
+		border-top: 1px solid #333333;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-top: 40px;
+		@include max-width-991{
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		.contactDiv{
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 33.33%;
+			@include max-width-991{
+				width: 100%;
+				margin-bottom: 15px;
+			}
+			@include max-width-767{
+				justify-content: flex-start;
+			}
+			img{
+				margin-right: 10px;
+			}
+			.contactDetail{
+				font-size: 18px;
+				line-height: 26px;
+				color: $white;
+				@include max-width-767{
+					font-size: 16px;
+					line-height: 22px;
+				}
+				span{
+					display: block;
+					position: relative;
+					@include max-width-991{
+						display: inline-block;
+					}
+					&:not(:first-child){
+						@include max-width-991{
+							padding-left: 20px;
+						}
+						&:before{
+							position: absolute;
+							content: '/';
+							left: 6px;
+							top: 0;
+							opacity: 0;
+							visibility: hidden;
+							@include max-width-991{
+								opacity: 1;
+								visibility: visible;
+							}
+						}
+					}
+					br{
+						@include max-width-1199{
+							display: none;
+						}
+					}
+				}
+				a{
+					color: $white;
+				}
+			}
+		}
+	}
+}

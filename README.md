@@ -2,6 +2,8 @@
 
 Smart-tool is a general purpose landing page created with Bootstrap4 framework.
 
+![](https://repository-images.githubusercontent.com/243479407/48d16080-5992-11ea-8d46-e9dcf349c6a1)
+
 ## Used Technologies 
 - [Bootstrap 4.4.1](https://getbootstrap.com/docs/4.4/getting-started/download/)
 - [SASS](https://sass-lang.com/install)

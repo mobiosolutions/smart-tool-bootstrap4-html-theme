@@ -182,31 +182,54 @@
 	.smallFooter{
 		border-top: 1px solid rgba(28, 28, 28, 0.12);
 		padding: 35px 0;
-		p{
+		.ipadCenter{
+			@include max-width-1199{
+				text-align: center;
+			}
+			@include max-width-991{
+				margin-top: 20px;
+			}
+			@include max-width-480{
+				text-align: left;
+			}
+		}
+		p, a{
 			color: #666666;
 			font-size: 14px;
 			line-height: 24px;
+			@include max-width-991{
+				text-align: center;
+			}
+			@include max-width-480{
+				text-align: left;
+			}
 		}
 		ul{
 			display: flex;
 			align-items: center;
 			justify-content: flex-end;
 			@include max-width-991{
-				align-items: flex-end;
-				flex-direction: column;
-			}
-			@include max-width-767{
 				align-items: center;
 				flex-direction: row;
-				margin-top: 30px;
+				justify-content: center;
+				margin-top: 20px;
+			}
+			@include max-width-480{
 				justify-content: flex-start;
 			}
 			li{
 				list-style-type: none;
 				padding-left: 35px;
+				@include max-width-1199{
+					padding-left: 15px;
+				}
 				@include max-width-767{
-					padding-right: 20px;
+					padding-right: 10px;
+					padding-left: 10px;
+				}
+				@include max-width-480{
 					padding-left: 0;
+					padding-right: 15px;
 				}
 				a{
 					color: #666666;
@@ -214,6 +237,9 @@
 					line-height: 18px;
 					&:hover{
 						color: $blue;
+					}
+					@include max-width-480{
+						font-size: 12px;
 					}
 				}
 

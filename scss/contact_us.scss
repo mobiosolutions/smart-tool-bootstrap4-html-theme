@@ -57,6 +57,9 @@
 					font-size: 16px;
 					line-height: 22px;
 				}
+				@include max-width-480{
+					font-size: 14px;
+				}
 				span{
 					display: block;
 					position: relative;

@@ -8709,6 +8709,9 @@ body {
           .contactUsSection .contactbox .contactDiv .contactDetail {
             font-size: 16px;
             line-height: 22px; } }
+        @media (max-width: 480px) {
+          .contactUsSection .contactbox .contactDiv .contactDetail {
+            font-size: 14px; } }
         .contactUsSection .contactbox .contactDiv .contactDetail span {
           display: block;
           position: relative; }
@@ -8922,34 +8925,58 @@ body {
 .footer .smallFooter {
   border-top: 1px solid rgba(28, 28, 28, 0.12);
   padding: 35px 0; }
-  .footer .smallFooter p {
+  @media (max-width: 1199px) {
+    .footer .smallFooter .ipadCenter {
+      text-align: center; } }
+  @media (max-width: 991px) {
+    .footer .smallFooter .ipadCenter {
+      margin-top: 20px; } }
+  @media (max-width: 480px) {
+    .footer .smallFooter .ipadCenter {
+      text-align: left; } }
+  .footer .smallFooter p, .footer .smallFooter a {
     color: #666666;
     font-size: 14px;
     line-height: 24px; }
+    @media (max-width: 991px) {
+      .footer .smallFooter p, .footer .smallFooter a {
+        text-align: center; } }
+    @media (max-width: 480px) {
+      .footer .smallFooter p, .footer .smallFooter a {
+        text-align: left; } }
   .footer .smallFooter ul {
     display: flex;
     align-items: center;
     justify-content: flex-end; }
     @media (max-width: 991px) {
       .footer .smallFooter ul {
-        align-items: flex-end;
-        flex-direction: column; } }
-    @media (max-width: 767px) {
-      .footer .smallFooter ul {
         align-items: center;
         flex-direction: row;
-        margin-top: 30px;
+        justify-content: center;
+        margin-top: 20px; } }
+    @media (max-width: 480px) {
+      .footer .smallFooter ul {
         justify-content: flex-start; } }
     .footer .smallFooter ul li {
       list-style-type: none;
       padding-left: 35px; }
+      @media (max-width: 1199px) {
+        .footer .smallFooter ul li {
+          padding-left: 15px; } }
       @media (max-width: 767px) {
         .footer .smallFooter ul li {
-          padding-right: 20px;
-          padding-left: 0; } }
+          padding-right: 10px;
+          padding-left: 10px; } }
+      @media (max-width: 480px) {
+        .footer .smallFooter ul li {
+          padding-left: 0;
+          padding-right: 15px; } }
       .footer .smallFooter ul li a {
         color: #666666;
         font-size: 14px;
         line-height: 18px; }
         .footer .smallFooter ul li a:hover {
           color: #3232CC; }
+        @media (max-width: 480px) {
+          .footer .smallFooter ul li a {
+            font-size: 12px; } }

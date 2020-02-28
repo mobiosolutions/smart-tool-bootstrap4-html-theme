@@ -8944,6 +8944,8 @@ body {
     @media (max-width: 480px) {
       .footer .smallFooter p, .footer .smallFooter a {
         text-align: left; } }
+  .footer .smallFooter a:hover {
+    color: #3232CC; }
   .footer .smallFooter ul {
     display: flex;
     align-items: center;

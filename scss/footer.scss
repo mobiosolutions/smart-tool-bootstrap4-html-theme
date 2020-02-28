@@ -204,6 +204,11 @@
 				text-align: left;
 			}
 		}
+		a{
+			&:hover{
+				color: $blue;
+			}
+		}
 		ul{
 			display: flex;
 			align-items: center;

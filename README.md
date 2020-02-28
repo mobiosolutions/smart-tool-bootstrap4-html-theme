@@ -20,7 +20,7 @@ Use the [git](https://git-scm.com/downloads) to install smart-tool , and follow 
 
 ###### step 1: Take a clone of repository.
 ```bash
-git clone https://github.com/mobiosolutions/smart-tool-angular-theme.git
+git clone https://github.com/mobiosolutions/smart-tool-bootstrap4-html-theme.git
 ```
 ###### Step 2: Move to the specific folder.
 ```bash
